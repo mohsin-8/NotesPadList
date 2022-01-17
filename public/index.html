@@ -19,6 +19,12 @@
         padding: 0;
         box-sizing: border-box;
     }
+
+    .edit {
+        cursor: pointer;
+        color: green;
+        font-size: 25px;
+    }
 </style>
 
 <body>
@@ -26,7 +32,7 @@
         <h1 class="display-4 text-center">
             <i class="fas fa-book-open text-success"></i> Notes<span class="text-primary">Pad</span>List
         </h1>
-        <form id="book-form">
+        <div id="book-form">
             <div class="form-group mt-4">
                 <label>Title</label>
                 <input type="text" id="title" class="form-control">
@@ -40,7 +46,7 @@
                 <input type="text" id="desc" class="form-control">
             </div>
             <input type="submit" value="Add Book" class="btn btn-success btn-block mt-4" onclick="foo()">
-        </form>
+        </div>
         <table class="table table-striped mt-5">
             <thead>
                 <tr>
